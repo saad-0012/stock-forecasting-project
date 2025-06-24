@@ -1,0 +1,126 @@
+# 📈 Time Series Stock Forecasting Project
+
+This project focuses on forecasting stock prices using four different models:
+
+* ARIMA
+* SARIMA
+* Prophet (by Meta)
+* LSTM (Deep Learning)
+
+Each model is evaluated using various error metrics, and an interactive dashboard is built using Streamlit.
+
+---
+
+## 📄 Objective
+
+To compare traditional and machine learning time series forecasting models in terms of:
+
+* Forecasting accuracy
+* Interpretability
+* Performance on recent stock price data
+
+---
+
+## 📊 Models Used
+
+1. **ARIMA** – Classic time series model for trend
+2. **SARIMA** – ARIMA with seasonal support
+3. **Prophet** – Advanced trend/seasonality modeling
+4. **LSTM** – Neural network for sequential prediction
+
+---
+
+## 🔢 Evaluation Metrics
+
+Models are compared using the last 30 days of actual stock price data.
+
+* **MAE** (Mean Absolute Error)
+* **RMSE** (Root Mean Squared Error)
+* **MAPE** (Mean Absolute Percentage Error)
+* **R² Score** (Explained Variance)
+* **SMAPE** (Symmetric MAPE)
+* **MSLE** (Mean Squared Log Error)
+* **Residual Plots** & **Ljung-Box Test**
+
+---
+
+## 🔍 Key Findings
+
+* LSTM generally gave the **best accuracy** but requires more compute.
+* Prophet offered a good **balance of performance and interpretability**.
+* SARIMA/ARIMA worked well but struggled with volatile movements.
+
+---
+
+## 📅 Tools & Libraries
+
+* Python 3.x
+* Streamlit
+* pandas, numpy, matplotlib, seaborn
+* scikit-learn, statsmodels, yfinance
+* Prophet (Meta)
+* TensorFlow/Keras
+
+---
+
+## 🗃️ How to Run
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/stock-forecasting-project.git
+cd stock-forecasting-project
+```
+
+### 2. Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run Streamlit dashboard
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🛠️ Folder Structure
+
+```
+project/
+├── app.py              # Streamlit Dashboard
+├── utils.py            # Helper functions (metrics, residuals, etc.)
+├── notebook.ipynb      # Full model building & evaluation
+├── README.md           # This file
+├── requirements.txt    # All dependencies
+```
+
+---
+
+## 🌐 Deployment
+
+You can deploy this app to Streamlit Cloud:
+
+1. Push your project to a **public GitHub repo**
+2. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud) and connect your GitHub
+3. Select `app.py` as the main file
+4. Click **Deploy**
+5. Share the generated link with your team 🌐
+
+---
+
+## 🤝 Contributors
+
+* \[Your Name]
+* \[Teammate 1]
+* \[Teammate 2]
+
+Feel free to fork, improve, or use this project in your own portfolio!
+
+---
+
+## 🚀 License
+
+MIT License – Free to use and modify with credit.
